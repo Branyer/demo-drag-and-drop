@@ -7,22 +7,27 @@
     <title>Document</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://raw.githack.com/SortableJS/Sortable/master/Sortable.js"></script>
 </head>
 <body>
     <div class="app">
-        <div class="container">
+        <h1>Sortable.js divs Draggable DEMO</h1>
+        <div id="container">
 
-            <div class="draggable one" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">
-
+            <div class="draggable one" >
+                <span>ONE</span>
             </div>
-            <div class="draggable two" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">
-                
+            <div class="draggable two" >
+                <span>TWO</span>
             </div>
-
+            <div class="draggable three" >
+                <span>THREE</span>
+            </div>
 
         </div>
-        <div class="msg"></div>
     </div>
-    <script src="index.js"></script>
+    <script text="text/javascript">
+        Sortable.create(container, {});
+    </script>
 </body>
 </html>

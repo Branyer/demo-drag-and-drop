@@ -19,6 +19,9 @@
     height: 200px;
     margin: 10px;
     position: relative;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
 }
 
 .one {
@@ -26,5 +29,26 @@
 }
 
 .two {
-    background-color: darkblue;
+    background-color: red;
+}
+
+
+.three {
+    background-color: rgb(126, 126, 21);
+}
+
+.glyphicon-move {
+    
+    cursor: move;
+  }
+
+.sortable-ghost {
+    opacity: 0;
+}
+
+span {
+    background-color: white;
+    border: 3px solid black;
+    color: black;
+    padding: 5px
 }
