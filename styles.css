@@ -21,7 +21,6 @@
     position: relative;
     display: grid;
     place-items: center;
-    cursor: pointer;
 }
 
 .one {
@@ -34,21 +33,15 @@
 
 
 .three {
-    background-color: rgb(126, 126, 21);
+    background-color: rgb(123, 149, 228);
 }
 
-.glyphicon-move {
-    
-    cursor: move;
-  }
-
-.sortable-ghost {
-    opacity: 0;
+.moving {
+    opacity: .001;
 }
 
 span {
-    background-color: white;
-    border: 3px solid black;
     color: black;
-    padding: 5px
+    background-color: white;
+    padding: 5px;
 }
